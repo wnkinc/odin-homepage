@@ -1,13 +1,49 @@
 /* styles.css */
 body {
-  background-color: #ecfeff;
+  background-color: #eff6ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+
+  padding: 20px;
+}
+
+/* Background block behind header image */
+.background-block {
+  position: absolute;
+  top: -45%; /* Adjust to position behind the image */
+  left: -100%;
+  width: 1000px; /* Slightly larger than the image */
+  height: 570px;
+  background-color: #06b6d4; /* Customize as needed */
+  z-index: -1; /* Place behind the image */
+  transform: rotate(-25deg);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Lifting effect */
+  transition: transform 0.3s ease;
+}
+
+.background-block:hover {
+  transform: scale(1.05) rotate(-5deg); /* Scale up on hover for lift effect */
 }
 
 .image-container {
   position: relative;
   display: inline-block;
   text-align: start;
-  padding: 20px;
 
   /* ****************** */
   width: 280px;
@@ -17,21 +53,39 @@ body {
 .image-container img {
   width: 100%;
   height: auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .image-text {
   position: absolute;
-  top: 87%;
-  left: 37%;
+  top: 88%;
+  left: 36%;
   transform: translate(-50%, -50%);
-  color: #ecfeff;
+  color: #eff6ff;
   font-size: 44px;
-  font-weight: bold;
+  font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.title.about {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+
+.text {
+  color: gray;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
 
 main {
   margin: 20px;
+  font-size: 24px;
 }
 
 .projects {
