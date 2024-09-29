@@ -88,6 +88,11 @@ main {
   font-size: 24px;
 }
 
+.title.work {
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -97,5 +102,95 @@ main {
 .project {
   width: 280px;
   height: 380px;
-  background-color: orange;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshot {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  color: #eff6ff;
+}
+
+.info {
+  background-color: #eff6ff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.description {
+  color: gray;
+  margin: 10px;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.gold {
+  background-color: goldenrod;
+}
+
+.green {
+  background-color: green;
+}
+
+.pink {
+  background-color: plum;
+}
+
+.blue {
+  background-color: #06b6d4;
+}
+
+.darkGreen {
+  background-color: darkolivegreen;
+}
+
+footer {
+  background-color: #06b6d4;
+  width: 100%;
+}
+
+footer img {
+  width: 100%; /* Make image take full width of footer */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevents extra space below the image */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #eff6ff;
+}
+
+.title.contact {
+  font-size: 34px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.callToAction {
+  margin-bottom: 10px;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.contactInfo {
+  margin-bottom: 10px;
+}
+
+.icons.contact {
+  align-self: center;
 }
