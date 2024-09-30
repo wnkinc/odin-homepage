@@ -25,7 +25,7 @@ header {
 /* Background block behind header image */
 .background-block {
   position: absolute;
-  top: -45%; /* Adjust to position behind the image */
+  top: -15%; /* Adjust to position behind the image */
   left: -100%;
   width: 1000px; /* Slightly larger than the image */
   height: 570px;
@@ -34,10 +34,6 @@ header {
   transform: rotate(-25deg);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Lifting effect */
   transition: transform 0.3s ease;
-}
-
-.background-block:hover {
-  transform: scale(1.05) rotate(-5deg); /* Scale up on hover for lift effect */
 }
 
 .image-container {
@@ -64,7 +60,6 @@ header {
   color: #eff6ff;
   font-size: 44px;
   font-weight: 400;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .title.about {
