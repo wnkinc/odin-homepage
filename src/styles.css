@@ -201,28 +201,45 @@ footer img {
 
   /* Background block behind header image */
   .background-block {
-    top: -20%; /* Adjust to position behind the image */
-    left: -100%;
+    top: -70%; /* Adjust to position behind the image */
+    left: -40%;
     width: 1500px;
-    transform: rotate(-10deg);
+    transform: rotate(-20deg);
   }
 
   .headerCard {
     background-color: #eff6ff;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Lifting effect */
-    position: relative;
-    overflow: hidden; /* Make sure floats do not overflow */
+    /* position: relative; */
   }
 
   .image-container {
-    width: 40%; /* Set width of image container */
+    width: 240px;
+    height: 230px;
     float: left; /* Float the image container to the left */
     margin-right: 20px; /* Add spacing between image and text */
     margin-bottom: 20px; /* Add space below the image */
   }
 
   .image-container img {
-    width: 100%; /* Make the image fill the container */
+    width: 300px;
     height: auto;
+
+    position: relative;
+    top: -60px;
+    left: -60px;
+  }
+
+  .image-text {
+    position: absolute;
+    top: -20%;
+    left: 166%;
+    transform: translate(-50%, -50%);
+    color: #eff6ff;
+    font-size: 44px;
+    font-weight: 400;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+    white-space: nowrap;
   }
 }
