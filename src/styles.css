@@ -250,4 +250,37 @@ footer img {
     grid-template-columns: 1fr 1fr;
     gap: 35px;
   }
+
+  footer {
+    flex-direction: row;
+  }
+
+  .footerImg {
+    background-color: #06b6d4;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .footerImg img {
+    width: 200px;
+    height: auto;
+    position: relative;
+    left: -15%;
+  }
+
+  .footer-container {
+    padding: 80px;
+  }
+
+  .title.contact {
+    align-self: flex-start;
+  }
+
+  .icons.contact {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 950px) {
 }
