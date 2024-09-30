@@ -7,19 +7,37 @@
   </head>
   <body>
     <header>
-      <div class="image-container">
-        <div class="background-block"></div>
-        <img src="imgs/originalMe.png" alt="" />
-        <div class="image-text">Wesley Klaassen</div>
+      <div class="background-block"></div>
+      <div class="headerCard">
+        <div class="image-container">
+          <picture>
+            <!-- This source will be used when the viewport is 500px or wider -->
+            <source srcset="imgs/140204064.png" media="(min-width: 500px)" />
+
+            <!-- This source will be used when the viewport is narrower than 500px -->
+            <img src="imgs/originalMe.png" alt="Responsive Image" />
+          </picture>
+
+          <div class="image-text">Wesley Klaassen</div>
+        </div>
+        <div class="headerTablet">
+          <div class="title about">About me</div>
+          <div class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            recusandae accusantium minus temporibus autem ullam atque rem
+            architecto voluptas in dolor minima inventore debitis suscipit
+            reprehenderit itaque optio odit reiciendis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Qui molestias beatae alias
+            dolorem explicabo necessitatibus eveniet, quis magnam molestiae
+            ullam quam ad ut perferendis, soluta, sit deserunt laborum culpa.
+            Aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Assumenda, cupiditate similique fugit eligendi ducimus impedit,
+            deleniti facere totam natus in dolor, unde illo sapiente? Veritatis
+            quaerat inventore placeat consectetur illum.
+          </div>
+        </div>
       </div>
-      <div class="title about">About me</div>
-      <div class="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
-        recusandae accusantium minus temporibus autem ullam atque rem architecto
-        voluptas in dolor minima inventore debitis suscipit reprehenderit itaque
-        optio odit reiciendis.
-      </div>
-      <div class="icons">
+      <div class="icons header">
         <svg viewBox="0 0 128 128" width="25" height="25" fill="black">
           <g fill="#181616">
             <path

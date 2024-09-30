@@ -36,13 +36,8 @@ header {
   transition: transform 0.3s ease;
 }
 
-.background-block:hover {
-  transform: scale(1.05) rotate(-5deg); /* Scale up on hover for lift effect */
-}
-
 .image-container {
   position: relative;
-  display: inline-block;
   text-align: start;
 
   /* ****************** */
@@ -193,4 +188,51 @@ footer img {
 
 .icons.contact {
   align-self: center;
+}
+
+@media (min-width: 500px) {
+  header {
+    padding: 80px;
+  }
+
+  .icons.header {
+    display: none;
+  }
+
+  /* Background block behind header image */
+  .background-block {
+    top: -20%; /* Adjust to position behind the image */
+    left: -100%;
+    width: 1500px;
+    transform: rotate(-10deg);
+  }
+
+  .headerCard {
+    background-color: #eff6ff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Lifting effect */
+    position: relative;
+    overflow: hidden; /* Make sure floats do not overflow */
+  }
+
+  .image-container {
+    width: 40%; /* Set width of image container */
+    float: left; /* Float the image container to the left */
+    margin-right: 20px; /* Add spacing between image and text */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+  }
+
+  .headerTablet {
+    overflow: hidden; /* Ensure proper handling of floats */
+  }
+
+  .headerTablet .text {
+    text-align: justify;
+    font-size: 16px;
+    clear: both; /* Ensure text extends full width when below the image */
+  }
 }
