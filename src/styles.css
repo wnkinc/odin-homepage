@@ -225,14 +225,4 @@ footer img {
     width: 100%; /* Make the image fill the container */
     height: auto;
   }
-
-  .headerTablet {
-    overflow: hidden; /* Ensure proper handling of floats */
-  }
-
-  .headerTablet .text {
-    text-align: justify;
-    font-size: 16px;
-    clear: both; /* Ensure text extends full width when below the image */
-  }
 }
