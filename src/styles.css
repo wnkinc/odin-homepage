@@ -1,10 +1,21 @@
 /* styles.css */
 body {
-  background-color: #eff6ff;
+  background-color: #d0dcec;
 
+  display: grid;
+  place-items: center;
+}
+
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: 1069px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: #eff6ff;
+  z-index: -2;
 }
 
 header,
