@@ -283,4 +283,51 @@ footer img {
 }
 
 @media (min-width: 950px) {
+  .icons.header {
+    display: block;
+    text-align: end;
+  }
+
+  .icons.header svg {
+    margin-right: 10px;
+  }
+
+  /* Background block behind header image */
+  .background-block {
+    top: -75%; /* Adjust to position behind the image */
+    left: -10%;
+    width: 3000px;
+    transform: rotate(-8deg);
+  }
+
+  .title.about {
+    text-align: start;
+  }
+
+  .image-container {
+    width: 380px;
+    height: 280px;
+  }
+
+  .image-container img {
+    width: 450px;
+  }
+
+  .image-text {
+    top: 120%;
+    left: 42%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footerImg img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: -15%;
+  }
 }
