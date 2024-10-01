@@ -1,3 +1,3 @@
-# Odin-template
+# odin-homepage
 
-LIVE PREVIEW - http://wnkinc.github.io/Odin-template
+LIVE PREVIEW - http://wnkinc.github.io/odin-homepage
